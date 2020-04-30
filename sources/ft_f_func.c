@@ -124,7 +124,7 @@ void				ft_round(t_spec *specifier, long double number)
 	}
 	l_num = ft_l_num(number / 10);
 	number = (temp % 10 >= 5) ? number / 10 + 1 : number / 10;
-	if ((l_num || !specifier->accuracy) && \
+ 	if ((l_num || !specifier->accuracy) && \
 	l_num != (ft_l_num(number)) && !check)
 		specifier->int_part++;
 }

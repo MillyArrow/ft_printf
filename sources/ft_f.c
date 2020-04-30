@@ -43,12 +43,12 @@ void		ft_putnbr_f(t_spec *specifier, long double number, size_t int_part)
 	start = 0;
 	int_part = 0;
 	t_number = number;
-	if (!(temp = t_number))
+	if (!(temp = t_number) && !specifier->int_part)
 	{
-		specifier->width--;
-		ft_putch('0', specifier);
+	    specifier->width--;
+	    ft_putch('0', specifier);
 	}
-	if (temp)
+	if (specifier->int_part)
 		ft_putnbrs_u(specifier->int_part, 10, specifier);
 	if (specifier->accuracy != 0 || specifier->flag[3] == '#')
 		ft_putch('.', specifier);
@@ -114,11 +114,11 @@ void		ft_f(t_spec *specifier, va_list args)
 	if (number < 0 && (number *= -1))
 		specifier->minus = 1;
 	specifier->int_part = number;
-	l_int_part = ft_l_num(number);
-	specifier->len_f = l_int_part + specifier->accuracy;
-	if (specifier->accuracy != 0 || specifier->flag[3] == '#')
-		specifier->len_f++;
 	ft_round(specifier, number);
+    l_int_part = ft_l_num(specifier->int_part);
+    specifier->len_f = l_int_part + specifier->accuracy;
+    if (specifier->accuracy != 0 || specifier->flag[3] == '#')
+        specifier->len_f++;
 	if (display_minus_f(specifier, number, l_int_part))
 		return ;
 	display_f(specifier, number, l_int_part);

@@ -12,7 +12,7 @@
 
 NAME = libft.a
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS =
 INC = includes
 SRC =	src/ft_atoi.c \
 		src/ft_bzero.c \

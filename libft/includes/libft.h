@@ -97,7 +97,7 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				get_next_line(const int fd, char **line);
 int				ft_get_number(const char *c, size_t *i);
-int				ft_number_length(intmax_t number, int base);
+int				ft_number_length(int64_t number, int base);
 void			ft_putnbrll(__int64_t n, int base);
 
 #endif

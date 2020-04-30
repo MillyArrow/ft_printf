@@ -12,7 +12,7 @@
 
 NAME = libftprintf.a
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS =
 
 INCLUDES = -I includes -I $(LIB_FT_DIR)/includes
 

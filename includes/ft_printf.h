@@ -102,4 +102,5 @@ void				print_width(t_spec *specifier, int *length, int *check);
 void				ft_width(t_spec *specifier, int length);
 void				print_width_f(t_spec *specifier);
 void				ft_width_f(t_spec *specifier);
+void				ft_e(t_spec *specifier, va_list args);
 #endif
