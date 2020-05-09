@@ -6,7 +6,7 @@
 /*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 23:29:48 by marrow            #+#    #+#             */
-/*   Updated: 2020/05/09 13:42:26 by mac              ###   ########.fr       */
+/*   Updated: 2020/05/09 17:16:10 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void		initialization(t_spec *specifier)
 	specifier->len_f = 0;
 	specifier->inf_nan = 0;
 	specifier->plus = 0;
+	ft_bzero(specifier->color, sizeof(char) * 8);
 }
 
 void		ft_putch(char c, t_spec *spec)
@@ -56,7 +57,7 @@ const char *restrict format)
 	while (str[i])
 	{
 		if (str[i] == '{')
-			ft_setcolor(str, &i);
+			ft_setcolor(str, &i, specifier);
 		if (str[i] != '%' && ++printed)
 			ft_putchar(str[i++]);
 		else

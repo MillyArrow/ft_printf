@@ -6,7 +6,7 @@
 /*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 20:35:53 by marrow            #+#    #+#             */
-/*   Updated: 2020/05/09 14:22:55 by mac              ###   ########.fr       */
+/*   Updated: 2020/05/09 17:09:09 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct		s_spec
 	__uint128_t		int_part;
 	size_t			l_int_part;
 	char			chk;
+	char			color[8];
 }					t_spec;
 void				ft_putch(char c, t_spec *spec);
 void				initialization(t_spec *specifier);
@@ -113,4 +114,5 @@ void				ft_width(t_spec *specifier, int length);
 void				print_width_f(t_spec *specifier);
 void				ft_width_f(t_spec *specifier);
 void				ft_e(t_spec *specifier, va_list args);
+int     			ft_setcolor(char *str, size_t *i, t_spec *specifier);
 #endif
