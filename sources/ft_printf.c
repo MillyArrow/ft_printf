@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marrow <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 23:29:48 by marrow            #+#    #+#             */
-/*   Updated: 2020/03/01 00:36:59 by marrow           ###   ########.fr       */
+/*   Updated: 2020/05/09 13:42:26 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ const char *restrict format)
 	specifier = (t_spec*)ft_memalloc(sizeof(t_spec));
 	while (str[i])
 	{
+		if (str[i] == '{')
+			ft_setcolor(str, &i);
 		if (str[i] != '%' && ++printed)
 			ft_putchar(str[i++]);
 		else

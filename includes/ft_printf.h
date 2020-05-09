@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marrow <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 20:35:53 by marrow            #+#    #+#             */
-/*   Updated: 2020/02/28 14:46:46 by marrow           ###   ########.fr       */
+/*   Updated: 2020/05/09 14:22:55 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,18 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include "libft.h"
+# include "../libft/includes/libft.h"
 # include <limits.h>
+
+# define black		"\e[00;30m"
+# define red		"\e[00;31m"
+# define green		"\e[00;32m"
+# define yellow		"\e[01;33m"
+# define blue		"\e[00;34m"
+# define purple		"\e[00;35m"
+# define cyan		"\e[00;36m"
+# define white		"\e[01;37m"
+# define eoc		"\e[m"
 
 typedef struct		s_spec
 {
