@@ -208,8 +208,8 @@ CMakeFiles/ft_printf.dir/libft/src/get_next_line.c.o
  ../libft/includes/libft.h
  /home/marrow/ft_printf/libft/src/get_next_line.c
 CMakeFiles/ft_printf.dir/main.c.o
- ../includes/ft_printf.h
- ../libft/includes/libft.h
+ /home/marrow/ft_printf/includes/ft_printf.h
+ /home/marrow/ft_printf/libft/includes/libft.h
  /home/marrow/ft_printf/main.c
 CMakeFiles/ft_printf.dir/sources/ft_big_x.c.o
  ../includes/ft_printf.h
@@ -259,6 +259,10 @@ CMakeFiles/ft_printf.dir/sources/ft_s.c.o
  ../includes/ft_printf.h
  ../libft/includes/libft.h
  /home/marrow/ft_printf/sources/ft_s.c
+CMakeFiles/ft_printf.dir/sources/ft_setcolor.c.o
+ ../includes/ft_printf.h
+ ../libft/includes/libft.h
+ /home/marrow/ft_printf/sources/ft_setcolor.c
 CMakeFiles/ft_printf.dir/sources/ft_type.c.o
  ../includes/ft_printf.h
  ../libft/includes/libft.h

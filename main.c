@@ -5,11 +5,13 @@
 
 int main()
 {
-    ft_printf("%10.1f\n", 11.99);
-    printf("%.2e\n", 11.99);
-    ft_printf("{blue}%s", "World\n");
-    printf("\033[1;31m");
-    printf("Hello world\n");
-    printf("\033[0m;");
+	int k;
+	int j;
+
+	k = printf("\033[00;31m");
+	printf("abcdef");
+	ft_printf("%d\n",k);
+	j = ft_printf("\033[00;31m");
+	ft_printf("%d", j);
     return(0);
 }

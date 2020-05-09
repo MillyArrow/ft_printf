@@ -14,22 +14,35 @@
 
 int     ft_setcolor(char *str, size_t *i, t_spec *specifier)
 {
-    //char    color[8];
     int     j;
-    int     k;
     
     (*i)++;
     j = 0;
 	while (str[*i] != '}')
     {
-        (str[*i]) = specifier->color[j];
-        i++;
+		specifier->color[j] = str[*i];
+		(*i)++;
         j++;
     }
+	(*i)++;
     specifier->color[j] = '\0';
-    k = ft_strcmp(specifier->color, "blue");
-     //   ft_putstr("\e[00;34m");
-    //return (0);
-    ft_putnbr(k);
+    if (!ft_strcmp(specifier->color, "black"))
+    	ft_putstrs(black,specifier);
+	if (!ft_strcmp(specifier->color, "red"))
+		ft_putstrs(red, specifier);
+	if (!ft_strcmp(specifier->color, "green"))
+		ft_putstrs(green, specifier);
+	if (!ft_strcmp(specifier->color, "yellow"))
+		ft_putstrs(yellow, specifier);
+	if (!ft_strcmp(specifier->color, "purple"))
+		ft_putstrs(purple, specifier);
+	if (!ft_strcmp(specifier->color, "cyan"))
+		ft_putstrs(cyan, specifier);
+	if (!ft_strcmp(specifier->color, "white"))
+		ft_putstrs(white, specifier);
+	if (!ft_strcmp(specifier->color, "blue"))
+		ft_putstrs(blue, specifier);
+	if (!ft_strcmp(specifier->color, "eoc"))
+		ft_putstrs(eoc, specifier);
     return (0);
 }

@@ -86,6 +86,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/marrow/ft_printf/sources/ft_pct.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_pct.c.o"
   "/home/marrow/ft_printf/sources/ft_printf.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_printf.c.o"
   "/home/marrow/ft_printf/sources/ft_s.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_s.c.o"
+  "/home/marrow/ft_printf/sources/ft_setcolor.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_setcolor.c.o"
   "/home/marrow/ft_printf/sources/ft_type.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_type.c.o"
   "/home/marrow/ft_printf/sources/ft_u.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_u.c.o"
   "/home/marrow/ft_printf/sources/ft_width.c" "/home/marrow/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/sources/ft_width.c.o"

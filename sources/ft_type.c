@@ -34,4 +34,6 @@ void			ft_type(t_spec *specifier, va_list args)
 		ft_pct(specifier);
 	else if (specifier->type == 'f')
 		ft_f(specifier, args);
+	else if (specifier->type == 'e')
+		ft_e(specifier, args);
 }

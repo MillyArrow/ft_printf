@@ -21,7 +21,7 @@ t_spec			*ft_format_specifier(char *str, size_t *i, t_spec *specifier)
 		ft_set_width(str, i, specifier);
 		ft_set_accuracy(str, i, specifier);
 		ft_set_length(str, i, specifier);
-		if (ft_strchr("%diouxXcspfF", str[*i]))
+		if (ft_strchr("%diouxXcspfFe", str[*i]))
 		{
 			specifier->type = str[*i];
 			(*i)++;

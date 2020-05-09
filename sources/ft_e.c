@@ -1,16 +1,32 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_d.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marrow <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/10 20:40:44 by marrow            #+#    #+#             */
-/*   Updated: 2020/02/29 21:37:53 by marrow           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "ft_printf.h"
+
+void				ft_round_e(t_spec *specifier, long double number)
+{
+	__uint128_t		temp;
+	__uint128_t		temp2;
+	size_t			l_num;
+	int				prec;
+	char			check;
+
+	check = 0;
+	temp = number;
+	number = number - temp;
+	prec = specifier->accuracy + 1 - ft_l_num(temp);
+	while (prec > 0)
+	{
+		number *= 10;
+		temp = number;
+		temp2 = number * 10;
+		check += (temp == 0 && prec != 1 && (temp2 != 9)) ? 1 : 0;
+		prec--;
+	}
+	l_num = ft_l_num(number / 10);
+	number = (temp % 10 >= 5) ? number / 10 + 1 : number / 10;
+	if ((l_num || !specifier->accuracy) && \
+	l_num != (ft_l_num(number)) && !check)
+		specifier->int_part++;
+}
 
 void		ft_e(t_spec *specifier, va_list args)
 {
@@ -29,7 +45,7 @@ void		ft_e(t_spec *specifier, va_list args)
 	if (number < 0 && (number *= -1))
 		specifier->minus = 1;
 	specifier->int_part = number;
-	ft_round(specifier, number);
+	ft_round_e(specifier, number);
 	l_int_part = ft_l_num(specifier->int_part);
 	specifier->len_f = l_int_part + specifier->accuracy;
 	if (specifier->accuracy != 0 || specifier->flag[3] == '#')

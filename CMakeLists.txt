@@ -81,6 +81,7 @@ add_executable(ft_printf
         sources/ft_big_x.c
         sources/ft_c.c
         sources/ft_d.c
+        sources/ft_e.c
         sources/ft_f.c
         sources/ft_f_func.c
         sources/ft_format_specifier.c
@@ -89,8 +90,9 @@ add_executable(ft_printf
         sources/ft_pct.c
         sources/ft_printf.c
         sources/ft_s.c
+        sources/ft_setcolor.c
         sources/ft_type.c
         sources/ft_u.c
         sources/ft_width.c
         sources/ft_x.c
-        main.c sources/ft_e.c)
+        main.c)

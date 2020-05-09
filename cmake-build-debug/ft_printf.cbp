@@ -330,6 +330,9 @@
 		<Unit filename="/home/marrow/ft_printf/sources/ft_s.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/home/marrow/ft_printf/sources/ft_setcolor.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/home/marrow/ft_printf/sources/ft_type.c">
 			<Option target="ft_printf"/>
 		</Unit>

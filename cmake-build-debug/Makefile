@@ -2337,6 +2337,33 @@ sources/ft_s.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/sources/ft_s.c.s
 .PHONY : sources/ft_s.c.s
 
+sources/ft_setcolor.o: sources/ft_setcolor.c.o
+
+.PHONY : sources/ft_setcolor.o
+
+# target to build an object file
+sources/ft_setcolor.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/sources/ft_setcolor.c.o
+.PHONY : sources/ft_setcolor.c.o
+
+sources/ft_setcolor.i: sources/ft_setcolor.c.i
+
+.PHONY : sources/ft_setcolor.i
+
+# target to preprocess a source file
+sources/ft_setcolor.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/sources/ft_setcolor.c.i
+.PHONY : sources/ft_setcolor.c.i
+
+sources/ft_setcolor.s: sources/ft_setcolor.c.s
+
+.PHONY : sources/ft_setcolor.s
+
+# target to generate assembly for a file
+sources/ft_setcolor.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/sources/ft_setcolor.c.s
+.PHONY : sources/ft_setcolor.c.s
+
 sources/ft_type.o: sources/ft_type.c.o
 
 .PHONY : sources/ft_type.o
@@ -2700,6 +2727,9 @@ help:
 	@echo "... sources/ft_s.o"
 	@echo "... sources/ft_s.i"
 	@echo "... sources/ft_s.s"
+	@echo "... sources/ft_setcolor.o"
+	@echo "... sources/ft_setcolor.i"
+	@echo "... sources/ft_setcolor.s"
 	@echo "... sources/ft_type.o"
 	@echo "... sources/ft_type.i"
 	@echo "... sources/ft_type.s"
