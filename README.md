@@ -1,5 +1,4 @@
 # ft_printf
-# ft_printf
 ft_printf project reproduces behavior of standard function printf.
 ### ft_printf must achieve the following mandatory requirements:
 - manage the following conversions: ```s, p, d, i, o, u, x, X, c, f ```;
